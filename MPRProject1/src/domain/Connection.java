@@ -1,6 +1,6 @@
 package domain;
 
-public class Connection {
+public class Connection extends Entity {
 
 	private String modemName;
 	private String routerName;
