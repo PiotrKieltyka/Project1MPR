@@ -8,7 +8,7 @@ import repositories.IUserRepository;
 
 public class DummyRepositoryCatalog implements IRepositoryCatalog{
 
-	DummyDb db = new DummyDb();
+	private DummyDb db = new DummyDb();
 	
 	@Override
 	public IUserRepository getUsers() {
@@ -22,6 +22,7 @@ public class DummyRepositoryCatalog implements IRepositoryCatalog{
 
 	@Override
 	public IRepository<Role> getRoles() {
+		// TODO Auto-generated method stub
 		return new DummyRoleRepository(db);
 	}
 

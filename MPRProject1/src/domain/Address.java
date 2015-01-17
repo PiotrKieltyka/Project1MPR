@@ -8,9 +8,15 @@ public class Address extends Entity {
 	private String street;
 	private String houseNumber;
 	private String localNumber;
-	private Person person;
-
 	
+	private Person person;
+	
+	public Person getPerson() {
+		return person;
+	}
+	public void setPerson(Person person) {
+		this.person = person;
+	}
 	public String getCountry() {
 		return country;
 	}
@@ -47,11 +53,6 @@ public class Address extends Entity {
 	public void setLocalNumber(String localNumber) {
 		this.localNumber = localNumber;
 	}
-	public Person getPerson() {
-		return person;
-	}
-	public void setPerson(Person person) {
-		this.person = person;
-	}
-
+	
+	
 }

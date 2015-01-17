@@ -10,12 +10,12 @@ public class DummyPersonRepository implements IRepository<Person>{
 	private DummyDb db;
 	
 	public DummyPersonRepository(DummyDb db) {
-		super();
 		this.db = db;
 	}
 
 	@Override
 	public void save(Person entity) {
+
 		db.persons.add(entity);
 		
 	}
@@ -27,14 +27,17 @@ public class DummyPersonRepository implements IRepository<Person>{
 
 	@Override
 	public void delete(Person entity) {
+
 		db.persons.remove(entity);
+		
 	}
 
 	@Override
 	public Person get(int id) {
-		for(Person person : db.persons)
-			if(person.getId()==id)
-				return person;
+
+		for(Person p: db.persons)
+			if(p.getId()==id)
+				return p;
 		return null;
 	}
 

@@ -6,7 +6,8 @@ import domain.*;
 
 public class DummyDb {
 
-	public List<User> users = new ArrayList<User>();
-	public List<Person> persons = new ArrayList<Person>();
-	public List<Role> roles = new ArrayList<Role>();
+	List<Person> persons = new ArrayList<Person>();
+	List<User> users = new ArrayList<User>();
+
+	List<Role> roles = new ArrayList<Role>();
 }

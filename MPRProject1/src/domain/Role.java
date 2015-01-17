@@ -2,16 +2,17 @@ package domain;
 
 import java.util.*;
 
-public class Role extends Entity  {
+public class Role extends Entity {
 
 	private String name;
-	private List<Privilege> privilege;
+	
+	private List<Privilege> privileges;
 	private List<User> users;
 	
 	public Role()
 	{
-		privilege = new ArrayList<Privilege>();
-		users = new ArrayList<User>();
+		privileges=new ArrayList<Privilege>();
+		users= new ArrayList<User>();
 	}
 	
 	public String getName() {
@@ -20,11 +21,11 @@ public class Role extends Entity  {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public List<Privilege> getPrivilege() {
-		return privilege;
+	public List<Privilege> getPrivileges() {
+		return privileges;
 	}
-	public void setPrivilege(List<Privilege> privilege) {
-		this.privilege = privilege;
+	public void setPrivileges(List<Privilege> privileges) {
+		this.privileges = privileges;
 	}
 	public List<User> getUsers() {
 		return users;
@@ -32,7 +33,6 @@ public class Role extends Entity  {
 	public void setUsers(List<User> users) {
 		this.users = users;
 	}
-	
 	
 	
 }
